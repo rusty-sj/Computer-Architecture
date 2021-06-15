@@ -1,0 +1,25 @@
+L 0,4 243 L1 miss
+L 80,8 243 L1 miss
+L 10,4 243 L1 miss
+L 102,6 243 L1 miss
+L 2,6 13 L1 hit
+S 180,5 486 L1 miss eviction
+L 100,2 13 L1 hit
+L 4,20 269 L1 miss hit
+L 100,2 13 L1 hit
+L 80,8 243 L1 miss eviction
+M 180,6 243 L1 miss eviction
+M 180,6 243 L1 hit
+L 100,8 13 L1 hit
+S 100,5 243 L1 hit
+S 180,8 243 L1 hit
+L 80,8 13 L1 hit
+M 0,8 243 L1 miss eviction
+M 0,8 243 L1 hit
+M 0,4 13 L1 hit
+M 0,4 243 L1 hit
+L 280,4 243 L1 miss eviction
+M 80,8 13 L1 hit
+M 80,8 243 L1 hit
+L1 Cache: Hits:15 Misses:10 Evictions:5
+Cycles:4248 Reads:16 Writes:7

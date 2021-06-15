@@ -1,0 +1,10 @@
+== Note that wb_sample_config is designed to hold 32 bytes per block
+== Test write-back...
+ L 0,4
+ L 1f,1
+ L 100,1
+ S 200,1
+ L 300,8
+ L 400,12
+== Evict a dirty block
+ L 500,4

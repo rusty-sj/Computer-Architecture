@@ -1,0 +1,14 @@
+L 474,1 396 L1 miss L2 miss L3 miss
+L 460,8 53 L1 miss L2 hit
+S 47c,16 959 L1 miss hit L2 miss hit L3 miss hit
+M 7,8 396 L1 miss L2 miss L3 miss
+M 7,8 396 L1 hit L2 hit L3 hit
+L c7e,2 396 L1 miss L2 miss L3 miss
+S c68,8 449 L1 miss L2 hit L3 hit
+L 864,10 396 L1 miss L2 miss eviction L3 miss
+L 460,8 13 L1 hit
+L 60,4 396 L1 miss eviction L2 miss eviction L3 miss eviction
+L1 Cache: Hits:3 Misses:8 Evictions:1
+L2 Cache: Hits:6 Misses:6 Evictions:2
+L3 Cache: Hits:4 Misses:6 Evictions:1
+Cycles:3850 Reads:7 Writes:3

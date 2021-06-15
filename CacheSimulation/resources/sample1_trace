@@ -1,0 +1,29 @@
+==Note that sample1_config is designed to hold only 8 bytes per block
+ L 0,4
+ L 80,8
+ L 10,4
+ L 102,6
+ L 2,6
+==The following store involves a "fetch on write" operation because we had to fetch the original block first
+ S 180,5
+ L 100,2
+==Note that the following load is spread across three blocks
+== (see next command)
+==Blocks 0 and 2 are still in the cache, but block 1 has never been loaded
+==Technically this causes an L1 "hit miss hit" but it is fine if your output file just indicates
+==that there was at least one hit and miss ("L1 miss hit" or "L1 hit miss"). The ordering does not matter as long as
+==you correctly indicate their presence.
+==The important thing is that ALL block hits and misses are reflected in the statistics that are printed at the
+==very end of the output file.
+ L 4,20
+ L 100,2
+ L 80,8
+ M 180,6
+ L 100,8
+ S 100,5
+ S 180,8
+ L 80,8
+ M 0,8
+ M 0,4
+ L 280,4
+ M 80,8

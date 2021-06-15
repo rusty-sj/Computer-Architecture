@@ -1,0 +1,22 @@
+==multi_sample1_config has an L1 with 16 bytes (13 cycles), L2 with 32 bytes (40 cycles), RAM is 230 cycles
+ L 0,4
+ L 80,8
+ L 10,4
+ L 102,6
+ L 2,6
+==The following store involves a "fetch on write" operation because we had to fetch the original block first
+ S 180,5
+ L 100,2
+==Note that the following load is spread across two blocks:
+ L 4,20
+ L 100,2
+ L 80,8
+ M 180,6
+ L 100,8
+ S 100,5
+ S 180,8
+ L 80,8
+ M 0,8
+ M 0,4
+ L 280,4
+ M 80,8

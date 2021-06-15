@@ -1,0 +1,16 @@
+== multi_sample2_configuration
+== L1: 16 bytes/block, 8 sets, associativity N=3, LRU, 13 cycles
+== L2: 32 bytes/block, 8 sets, associativity N=2, LRU, 40 cycles
+== L3: 32 bytes/block, 32 sets, associativity N=3, LRU, 110 cycles
+== RAM: 230 cycles
+ L 474,1
+ L 460,8
+ S 47c,16
+ M 7,8
+ L c7e,2
+== this store will hit L2 while fetching:
+ S c68,8
+ L 864,10
+ L 460,8
+== the following load is more complex due to multiple cache impacts...
+ L 60,4

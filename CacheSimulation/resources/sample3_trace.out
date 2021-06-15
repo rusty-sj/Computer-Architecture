@@ -1,0 +1,5 @@
+L 0,4 246 L1 miss
+L 1f,1 13 L1 hit
+L 20,1 17 L1 miss
+L1 Cache: Hits:1 Misses:2 Evictions:0
+Cycles:276 Reads:3 Writes:0

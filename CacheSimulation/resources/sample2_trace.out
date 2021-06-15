@@ -1,0 +1,25 @@
+L 0,4 246 L1 miss
+L 80,8 246 L1 miss
+L 10,4 13 L1 hit
+L 102,6 246 L1 miss
+L 2,6 13 L1 hit
+S 180,5 492 L1 miss
+L 100,2 13 L1 hit
+L 4,20 13 L1 hit
+L 100,2 13 L1 hit
+L 80,8 13 L1 hit
+M 180,6 13 L1 hit
+M 180,6 246 L1 hit
+L 100,8 13 L1 hit
+S 100,5 246 L1 hit
+S 180,8 246 L1 hit
+L 80,8 13 L1 hit
+M 0,8 13 L1 hit
+M 0,8 246 L1 hit
+M 0,4 13 L1 hit
+M 0,4 246 L1 hit
+L 280,4 246 L1 miss
+M 80,8 13 L1 hit
+M 80,8 246 L1 hit
+L1 Cache: Hits:18 Misses:5 Evictions:0
+Cycles:3108 Reads:16 Writes:7

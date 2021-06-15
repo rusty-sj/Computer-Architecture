@@ -1,0 +1,7 @@
+== Note that sample3_config is designed to hold 32 bytes per block
+== This file demonstrates the RAM buffering behavior
+ L 0,4
+ L 1f,1
+== The following operation is accessing RAM at the next contiguous location from its last access
+== That's why the operation only consumes (13 + 1 + 1 + 1 + 1) cycles.
+ L 20,1

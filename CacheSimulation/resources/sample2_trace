@@ -1,0 +1,22 @@
+==Note that sample2_config is designed to hold 32 bytes per block
+==This has several effects, one of which is that the RAM requires (230+1+1+1) cycles to fetch a 32 byte block.
+==Another side effect is that the blocks do not all fall into the same index (hence the lack of evictions).
+ L 0,4
+ L 80,8
+ L 10,4
+ L 102,6
+ L 2,6
+ S 180,5
+ L 100,2
+ L 4,20
+ L 100,2
+ L 80,8
+ M 180,6
+ L 100,8
+ S 100,5
+ S 180,8
+ L 80,8
+ M 0,8
+ M 0,4
+ L 280,4
+ M 80,8
